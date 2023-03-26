@@ -9,6 +9,7 @@ Below, you'll find links to Markdown documents in this repository explaining the
 
 ### Using Channel Operators
   - [Get first N elements from a channel](snippets/get_first_N_from_channel.md)
+  - [Filter items within tuples within your channels](snippets/filter_items_within_tuples_within_your_channel.md)
 
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
