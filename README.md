@@ -9,5 +9,5 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Get first N elements from a channel](snippets/get_first_N_from_channel.md)
 
 ### Misc
-  - [Don't run the pipeline, but create required conda environments](snippets/create_conda_env_pull_docker_wo_running.md)
+  - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
   - How do I organize my output files according to some pattern, and organize everything else in a different path?
