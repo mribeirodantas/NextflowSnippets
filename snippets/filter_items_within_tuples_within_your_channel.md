@@ -1,4 +1,4 @@
-# Filter items within tuples within your channel
+# Filter items within a list in tuples within your channels
 
 Let's say you have a channel with tuples whose second items of every tuple 
 element is a list of files. The channel looks like this:
