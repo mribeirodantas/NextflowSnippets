@@ -15,3 +15,4 @@ Below, you'll find links to Markdown documents in this repository explaining the
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
   - [Organize output files according to some pattern, and organize everything else in a different path](snippets/organize_publishdir_rest.md)
+  - [Capture multiple values provided with a pipeline parameter](snippets/capture_multi_values_pipeline_parameter.md)
