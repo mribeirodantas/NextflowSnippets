@@ -38,10 +38,10 @@ process FOO {
   input:
     path ifile
   output:
-    path "novo${ifile.name}"
+    path "new${ifile.name}"
   script:
     """
-    echo "something else" > novo${ifile.name}
+    echo "something else" > new${ifile.name}
     """
 }
 
@@ -57,4 +57,19 @@ workflow {
 ```
 
 The snippet above will save the files ending in `.txt` to `results/texts` and 
-everything else will be saved in `results/rest`.
+everything else will be saved in `results/rest`. Using the `tree` command, we 
+can see the final tree structure:
+
+```console
+tree results
+
+results/
+├── rest
+│   └── newc.jpeg
+└── texts
+    ├── newa.txt
+    └── newb.txt
+
+3 directories, 3 files
+
+```
