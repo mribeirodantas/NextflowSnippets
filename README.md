@@ -17,3 +17,4 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Organize output files according to some pattern, and organize everything else in a different path](snippets/organize_publishdir_rest.md)
   - [Capture multiple values provided with a pipeline parameter](snippets/capture_multi_values_pipeline_parameter.md)
   - [Query attributes of objects](snippets/query_object_attributes.md)
+  - [Piping with multiple processes at the same time](snippets/pipe_multiple_processes.md)
