@@ -14,4 +14,4 @@ Below, you'll find links to Markdown documents in this repository explaining the
 
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
-  - How do I organize my output files according to some pattern, and organize everything else in a different path?
+  - [Organize output files according to some pattern, and organize everything else in a different path](snippets/organize_publishdir_rest.md)
