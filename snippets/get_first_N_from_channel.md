@@ -2,7 +2,7 @@
 
 You may want to consume the first N elements from a channel and don't know how
 to do it. Even though there is an operator for that (`take`, check details 
-[here](https://www.nextflow.io/docs/latest/operator.html#take))), I think this
+[here](https://www.nextflow.io/docs/latest/operator.html#take)), I think this
 is a nice opportunity to try to reproduce its behavior by combining other 
 operators. It's also mportant to mention that the `first` channel operator 
 (details [here](https://www.nextflow.io/docs/latest/operator.html#first))
