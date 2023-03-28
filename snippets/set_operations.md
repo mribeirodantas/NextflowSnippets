@@ -66,8 +66,10 @@ Launching `asd.nf` [fervent_monod] DSL2 - revision: dc5d1b236a
 [1, 2, 5, 6]
 ```
 
-The figure below illustrates the concept of symmetric difference in set theory.
-![Symmetric difference](https://upload.wikimedia.org/wikipedia/commons/4/46/Venn0110.svg)
+The figure below illustrates the concept of symmetric difference in set theory:
+<p align="center">
+  <img width="460" height="300" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Venn0110.svg">
+</p>
 
 As you've probably realized now, it's trivial to convert the code above to keep 
 the intersection instead. Instead of filtering for those that appear only once, 
@@ -99,8 +101,10 @@ N E X T F L O W  ~  version 23.02.0-edge
 Launching `asd.nf` [wise_legentil] DSL2 - revision: 52d71d6c1d
 [3, 4]
 ```
-The figure below illustrates the concept of intersection in set theory.
-![Intersection](https://upload.wikimedia.org/wikipedia/commons/9/99/Venn0001.svg)
+The figure below illustrates the concept of intersection in set theory:
+<p align="center">
+  <img width="460" height="300" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Venn0001.svg">
+</p>
 
 But what if you want the difference? You don't care about the elements that 
 exist only in `ch2`. In this case, a trick is to mix `ch1` with `ch2`, and then 
@@ -135,8 +139,11 @@ Launching `asd.nf` [kickass_archimedes] DSL2 - revision: b924344052
 [1, 2]
 ```
 
-The figure below illustrates the concept of difference in set theory.
-![Set difference](https://upload.wikimedia.org/wikipedia/commons/e/e6/Venn0100.svg)
+The figure below illustrates the concept of difference in set theory:
+<p align="center">
+  <img width="460" height="300" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Venn0100.svg">
+</p>
+
 
 This is not the only way that you can do that. Check below for two different 
 solutions that arrive at the same result. These solutions were written by 
