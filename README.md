@@ -1,4 +1,4 @@
-# Nextflow Snippets
+# <img width=25 height=25 src="https://github.com/nextflow-io/trademark/blob/master/nextflow-icon-128x128.png?raw=true"> Nextflow Snippets
 
 Snippet is a programming term for a small region of re-usable source code, machine code, or text, and Nextflow is both a Domain-Specific Language for writing data pipelines and a pipeline orchestrator. For more information about Nextflow, check the official [site](https://www.nextflow.io) and [documentation](https://www.nextflow.io/docs/latest/). For community training material, [this link](https://training.nextflow.io) is a greaaaaaat place to start! :smiley:
 
@@ -23,3 +23,6 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Query attributes of objects](snippets/query_object_attributes.md)
   - [Piping with multiple processes at the same time](snippets/pipe_multiple_processes.md)
   - [Get the `publishDir` paths for a specific task](snippets/get_task_publishDir.md)
+  
+  ## Nextflow Patterns
+  If you're looking for more snippets, you can find plently at [Nextflow Patterns](https://nextflow-io.github.io/patterns/).
