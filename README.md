@@ -13,6 +13,7 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Filter items within a list in tuples within your channels](snippets/filter_items_within_tuples_within_your_channel.md)
   - [Filter tuples within your channel](snippets/filter_tuples_within_your_channel.md)
   - [Flatten multiple-item tuple to 2-item tuple keeping key](snippets/flatten_multiple_item_tuples_to_simple_tuple.md)
+  - [Recreate `countBy` operator for channels consisting of single elements or tuples](snippets/countBy.md)
 
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
