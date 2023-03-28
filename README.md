@@ -21,3 +21,4 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Capture multiple values provided with a pipeline parameter](snippets/capture_multi_values_pipeline_parameter.md)
   - [Query attributes of objects](snippets/query_object_attributes.md)
   - [Piping with multiple processes at the same time](snippets/pipe_multiple_processes.md)
+  - [Get the `publishDir` paths for a specific task](snippets/get_task_publishDir.md)
