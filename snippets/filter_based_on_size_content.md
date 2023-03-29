@@ -67,8 +67,8 @@ process PRINT {
 }
 
 workflow {
-    TO_UPPER_CASE(input_data)
-    TO_UPPER_CASE.out.filter { it.size() > 11.B  } | PRINT
+  TO_UPPER_CASE(input_data)
+  TO_UPPER_CASE.out.filter { it.size() > 11.B  } | PRINT
 }
 ```
 
@@ -107,7 +107,7 @@ Launching `asd.nf` [cheesy_bose] DSL2 - revision: 541dc60162
 executor >  local (5)
 [6f/c232b0] process > TO_UPPER_CASE (2) [100%] 3 of 3 ✔
 [9a/59f343] process > PRINT (2)         [100%] 2 of 2 ✔
-OLá MUNDO
+OLA MUNDO
 
 HOLA MUNDO
 ```
