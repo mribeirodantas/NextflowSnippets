@@ -15,6 +15,7 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Flatten multiple-item tuple to 2-item tuple keeping key](snippets/flatten_multiple_item_tuples_to_simple_tuple.md)
   - [Recreate `countBy` operator for channels consisting of single elements or tuples](snippets/countBy.md)
   - [Set operations with channels](snippets/set_operations.md)
+  - [Filter output channel elements based on file size or file content](snippets/filter_based_on_size_content.md)
 
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
