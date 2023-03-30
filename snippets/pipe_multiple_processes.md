@@ -43,3 +43,27 @@ Channel
 ```
 
 If you're a one-liner, you can make it even shorter, but I like it this way :smiley:
+
+In this example, our `THIRD_PROCESS` has a single input and that's why we used the 
+`mix` channel operator to put together the two output channels, one from `FIRST_PROCESS`
+ and one from the `SECOND_PROCESS`. You can remove the `mix` if you want, but then you'd
+ have to change the code of the `THIRD_PROCESS` to expect two input channels, like in 
+ the snippet below:
+  
+```Groovy
+process THIRD_PROCESS {
+  debug true
+
+  input:
+  val x
+  val y
+
+  output:
+  stdout
+
+  script:
+  """
+  do_something_here
+  """
+}
+  ```
