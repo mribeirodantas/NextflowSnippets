@@ -16,6 +16,7 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Recreate `countBy` operator for channels consisting of single elements or tuples](snippets/countBy.md)
   - [Set operations with channels](snippets/set_operations.md)
   - [Filter output channel elements based on file size or file content](snippets/filter_based_on_size_content.md)
+  - [Sort lexicographically paths in a list within a tuple](snippets/sort_lexicographically_list_in_tuple.md)
 
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
