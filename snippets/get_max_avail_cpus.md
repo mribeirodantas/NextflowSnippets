@@ -42,3 +42,23 @@ process FOO {
     """
 }
 ```
+
+There are two other interesting things you can also do that are similar to this.
+ You can compare a number to the number of your available CPU cores and choose 
+the smaller. Check the snippet below for one example:
+
+```Groovy
+process FOO {
+  cpus Math.min(6, Runtime.getRuntime().availableProcessors())
+
+  ...
+```
+
+If you have 8 CPU cores, this process will request 6, as 6 is smaller than 8. If
+ you have only 4, it will pick 4, as 4 is smaller than 6. You could also create 
+a function called `check_max` (or any other valid name that you want) and apply 
+it to your resources requests in the process scope (be it in the script file, or
+ in configuration files) so that regardless of the final value that will be 
+requested (check details about dynamic requests 
+[here](https://www.nextflow.io/docs/latest/process.html?highlight=attempt#dynamic-computing-resources)),
+ it will always be capped by the maximum available resources.
