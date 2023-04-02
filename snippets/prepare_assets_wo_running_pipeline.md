@@ -14,17 +14,20 @@ aware that you could have them combined in the same pipeline, such as pulling my
  remote pipeline and Docker images.
 
 ## Creating conda environemnts
+
 ```Groov
 process FOO {
   debug true
   conda 'multiqc'
+
   script:
-  """
-  multiqc --help
-  """
+    """
+    multiqc --help
+    """
+
   stub:
-  """
-  """
+    """
+    """
 }
 
 workflow {
@@ -44,13 +47,15 @@ with Docker:
 process FOO {
   debug true
   container 'quay.io/biocontainers/multiqc:1.0--py36_1'
+
   script:
-  """
-  multiqc --help
-  """
+    """
+    multiqc --help
+    """
+
   stub:
-  """
-  """
+    """
+    """
 }
 
 workflow {

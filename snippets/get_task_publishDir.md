@@ -14,28 +14,30 @@ process FOO {
   publishDir 'results/txts/', mode: 'copy', overwrite: false, pattern: '*.txt'
   publishDir 'results/svgs/', mode: 'copy', overwrite: false, pattern: '*.svg'
   ...
-  ```
+```
 
 But what if you wanted to get this value during the task execution and you don't
  want to copy-paste these paths all over the place? The snippet below is a 
- solution for this problem.
+solution for this problem.
 
  ```Groovy
 process FOO {
   debug true
   publishDir 'results/txts/', mode: 'copy', overwrite: false, pattern: '*.txt'
   publishDir 'results/svgs/', mode: 'copy', overwrite: false, pattern: '*.svg'
+
   input:
-      val filename
+    val filename
+
   output:
-      path filename
+    path filename
 
   script:
-  publishDir_paths = task.target.publishDir.collect{ it.path }
-  """
-  touch $filename
-  echo $publishDir_paths
-  """
+    publishDir_paths = task.target.publishDir.collect{ it.path }
+    """
+    touch $filename
+    echo $publishDir_paths
+    """
 }
 
 workflow {

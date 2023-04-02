@@ -55,15 +55,15 @@ process THIRD_PROCESS {
   debug true
 
   input:
-  val x
-  val y
+    val x
+    val y
 
   output:
-  stdout
+    stdout
 
   script:
-  """
-  do_something_here
-  """
+    """
+    do_something_here
+    """
 }
   ```

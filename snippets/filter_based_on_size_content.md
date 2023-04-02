@@ -42,15 +42,15 @@ Channel
 
 process TO_UPPER_CASE {
   input:
-  path x
+    path x
 
   output:
-  path 'content.txt'
+    path 'content.txt'
 
   script:
-  """
-  cat $x | tr '[a-z]' '[A-Z'] > content.txt
-  """
+    """
+    cat $x | tr '[a-z]' '[A-Z'] > content.txt
+    """
 }
 
 
@@ -58,12 +58,12 @@ process PRINT {
   debug true
 
   input:
-  path x
+    path x
 
   script:
-  """
-  cat $x
-  """
+    """
+    cat $x
+    """
 }
 
 workflow {

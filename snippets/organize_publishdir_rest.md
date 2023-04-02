@@ -14,7 +14,7 @@ else, according to patterns, that's also fine. This is easily solved by
 process FOO {
   publishDir path: 'results/texts', mode: 'copy', pattern: '*.txt'
   publishDir path: 'results/images', mode: 'copy', pattern: '*.svg'
-  
+
   ...
 }
 ...
@@ -35,10 +35,13 @@ for this problem.
 process FOO {
   publishDir path: 'results', mode: 'copy', saveAs: { filename ->
     filename.indexOf(".txt") > 0 ? "texts/$filename" : "rest/$filename" }
+
   input:
     path ifile
+
   output:
     path "new${ifile.name}"
+
   script:
     """
     echo "something else" > new${ifile.name}
