@@ -45,7 +45,7 @@ my_channel
 ```
 
 You can get the instance type with `getClass()`, similarly to what is shown in 
-[this](snippets/query_object_attributes.md) snippet. In this snippet, we checked
+[this](query_object_attributes.md) snippet. In this snippet, we checked
  for array lists as a condition to change the structure, but you could check if 
 it's a file, a string, and so on :smiley:
 
