@@ -27,5 +27,6 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Piping with multiple processes at the same time](snippets/pipe_multiple_processes.md)
   - [Get the `publishDir` paths for a specific task](snippets/get_task_publishDir.md)
   - [Request the maximum number of available CPU cores for a process](snippets/get_max_avail_cpus.md)
+  - [Pass config settings as a command line argument instead of a config file](snippets/config_cmd_instead_file.md)
   ## Nextflow Patterns
   If you're looking for more snippets, you can find plently at [Nextflow Patterns](https://nextflow-io.github.io/patterns/).
