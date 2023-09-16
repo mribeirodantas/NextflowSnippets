@@ -29,5 +29,9 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Request the maximum number of available CPU cores for a process](snippets/get_max_avail_cpus.md)
   - [Pass config settings as a command line argument instead of a config file](snippets/config_cmd_instead_file.md)
   - [Multiple instances of the same file provided to the same task](snippets/same_file_multiple_times.md)
+  - [Save configuration files used in a specific run](snippets/save_configs.md)
+  - [Compose configurations in the `nextflow.config` file](snippets/composing_nextflow_config.md)
+  - [Run some processes outside containers](snippets/no_container_per_process.md)
+  - [Run containers of specific processes without root access](snippets/container_no_root.md)
   ## Nextflow Patterns
   If you're looking for more snippets, you can find plenty at [Nextflow Patterns](https://nextflow-io.github.io/patterns/).
