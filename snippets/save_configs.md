@@ -7,9 +7,9 @@ process directive is very useful for that, as you can choose what files you
 want to store, how, and where. However, if you're really worried about 
 reproducibility, it'd be interesting to know what configurations were used in 
 the specific run of the pipeline that generated these output files. The snippet
- below which is a solution to this problem will make use of an internal 
-workflow variable of Nextflow: `workflow.configFiles`, that consists of a list 
-of all the configuration files used.
+ below which is a solution to this problem will make use of the 
+`workflow.configFiles` Nextflow internal variable, that consists of a list of 
+all the configuration files used.
 
 
 ```Groovy
@@ -56,7 +56,7 @@ results
 ```
 
 Let's say you have another file called `another_conf.config` and you provided 
-it with the `-c` option of nextflow, as in the command line below:
+it with the `-c` nextflow option, as in the command line below:
 
 ```console
 nextflow run save_conf_files.nf -c another_conf.config
@@ -80,3 +80,7 @@ The trick here is to use the `workflow.configFiles` variable and the
 [collectFile](https://www.nextflow.io/docs/latest/operator.html#collectfile) 
 channel operator to store them in the same path you provided to the publishDir 
 directive.
+
+> [!NOTE]
+> If by any chance there was no configuration file for a run, the `configs` 
+> folder will still be there, but empty.
