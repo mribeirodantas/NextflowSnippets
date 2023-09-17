@@ -13,7 +13,7 @@ but won't run anything. Three examples below illustrate what one can do. Be
 aware that you could have them combined in the same pipeline, such as pulling my
  remote pipeline and Docker images.
 
-## Creating conda environemnts
+## Creating conda environments
 
 ```Groov
 process FOO {

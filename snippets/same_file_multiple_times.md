@@ -18,7 +18,7 @@ input:
 
 When a a process instance is created, a task, the input files are staged in the 
 task directory, which means a symbolic link is created pointing to the original 
-location fo the file. However, if the two files that are input to a task have 
+location of the file. However, if the two files that are input to a task have 
 the same name, a file name collision will occur. A solution to this is to use 
 more than a simple placeholder (mng1, mng2 or whatever you want to call it) for 
 the input, but a filename like in the example below:

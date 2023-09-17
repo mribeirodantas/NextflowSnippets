@@ -29,7 +29,7 @@ echo "Ola mundo" > c.txt
 With that done, our Nextflow pipeline will read these files and load them into 
 the channel `input_data`. The `TO_UPPER_CASE` process will get the content of every one of
  these three files and make it uppercase. The output channel of this process 
-will contain three files and the content of each one of them is teh uppercase 
+will contain three files and the content of each one of them is the uppercase 
 version of each of three original files. This will be forwarded to the `PRINT` 
 process that prints the content of each file to the standard output (screen), 
 but not before some filtering takes place :smiley:
