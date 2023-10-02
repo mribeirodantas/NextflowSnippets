@@ -1,10 +1,10 @@
-# Group based on 2 keys, sort based on another one
+# Group based on two keys, sort based on another one
 
-Let's say you have a channel where every element is a atuple that consists of a 
+Let's say you have a channel where every element is a tuple that consists of a 
 meta map and a FASTQ file. This meta map, which is the first item of your tuple,
  contains multiple key-value pairs, and you want to group the elements in this 
-channel based on two of these keys, and then sort the grouped tuples based on 
-another key of this meta map. Check the channel creating below for a better 
+channel based on two of these keys and then sort the grouped tuples based on 
+another key of this meta map. Check the channel created below for a better 
 understanding of the problem.
 
 ```Groovy
@@ -38,7 +38,7 @@ Launching `x.nf` [backstabbing_mahavira] DSL2 - revision: cb93185077
 [[id:testB, end:2, chunk:1, total_chunks:2], /home/user/nf/work/ff/4b8ebb5a54d0532ef10a61d1642196/testB_2.1.fastq]
 ```
 
-Based on the example above, you want to group these elemnets by the `id` and 
+Based on the example above, you want to group these elements by the `id` and 
 `chunk`, and then sort by `end`. You're probably aware of the `groupTuple` 
 channel operator that.. groups tuples 😬. It also has a `sort` option (Read 
 more about the operator [here](https://github.com/nextflow-io/nextflow/blob/master/docs/operator.md#grouptuple)).
@@ -67,7 +67,7 @@ Launching `x.nf` [insane_mendel] DSL2 - revision: 07c0453c47
 [testB, 1, [[[id:testB, end:1, chunk:1, total_chunks:2], /home/user/nf/work/ff/4b8ebb5a54d0532ef10a61d1642196/testB_1.1.fastq], [[id:testB, end:2, chunk:1, total_chunks:2], /home/user/nf/work/ff/4b8ebb5a54d0532ef10a61d1642196/testB_2.1.fastq]]]
 ```
 
-It's grouped as we want, but it's not sorted yet and there's too much redundant
+It's grouped as we want, but it's not sorted yet, and there's too much redundant
  information. The next step is to sort, which we will do through a closure that
  accesses the value of the `end` key.
 
@@ -99,7 +99,7 @@ my_ch
   .view()
 ```
 
-You can find the full snippet below, followed by the output:
+You can find the complete snippet below, followed by the output:
 
 ```Groovy
 Channel
