@@ -39,3 +39,15 @@ subset is a single element. Then, the `first` operator will consume the first
 element, which is this subset with 5 items. The `flatten` operator will turn 
 this single element with five items into a channel with five elements. The 
 `view` operator will print the channel to the screen :smiley:
+
+In case you’re curious, you can find below the output for the last snippet:
+
+```console
+N E X T F L O W  ~  version 23.09.2-edge
+Launching `marcel.nf` [romantic_waddington] DSL2 - revision: c2d9ba8d7b
+a
+b
+c
+d
+e
+```
