@@ -62,3 +62,10 @@ it to your resources requests in the process scope (be it in the script file, or
 requested (check details about dynamic requests 
 [here](https://www.nextflow.io/docs/latest/process.html?highlight=attempt#dynamic-computing-resources)),
  it will always be capped by the maximum available resources.
+
+> [!IMPORTANT]  
+> This snippet only works for the `local` executor because it's only in this case
+> that the environment is shared by the Nextflow process and the tasks. In other
+> circumstances, the number of CPUs obtained by the snippet will reflect the
+> environment where Nextflow is running only, and not where the task will be run
+> (e.g. in the cloud).
