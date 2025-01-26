@@ -7,7 +7,7 @@ This repository contains a collection of numerous solutions I have worked on thr
 ## List of snippets by category
 Below, you'll find links to Markdown documents in this repository explaining the issue followed by the snippet that solves it.
 
-### Using Channel Operators
+### Using Channel Operators and Factories
   - [Get first N elements from a channel](snippets/get_first_N_from_channel.md)
   - [Get last N elements from a channel](snippets/get_last_N_from_channel.md)
   - [Filter items within a list in tuples within your channels](snippets/filter_items_within_tuples_within_your_channel.md)
@@ -20,6 +20,7 @@ Below, you'll find links to Markdown documents in this repository explaining the
   - [Provide multiple paths from a channel as a string to a command](snippets/joining_paths_as_string_to_command.md)
   - [Guarantee tuple structure in a channel](snippets/guarantee_tuple_structure.md)
   - [Group based on two keys, sort based on another one](snippets/grouptuple_sort_metamap.md) 
+  - [Add ending condition to `watchPath`](snippets/end_condition_watchpath.md)
 ### Misc
   - [Prepare assets without running the pipeline](snippets/prepare_assets_wo_running_pipeline.md)
   - [Organize output files according to some pattern, and organize everything else in a different path](snippets/organize_publishdir_rest.md)
